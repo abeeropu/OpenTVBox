@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">OpenTVBox</string>
+    <string name="app_tagline">Android TV Box Compatibility &amp; App Hub</string>
+    
+    <string name="status_rooted">Root Access: GRANTED</string>
+    <string name="status_unrooted">Root Access: MISSING (Standard Mode)</string>
+    <string name="status_leanback_ok">Leanback Compatibility: ACTIVE</string>
+    <string name="status_leanback_missing">Leanback Compatibility: INACTIVE</string>
+    
+    <string name="btn_unlock_playstore">1-Click Play Store Unlock</string>
+    <string name="desc_unlock_playstore">Injects Leanback TV permissions, fixes \"App not compatible\" errors, and flushes Play Store cache.</string>
+    
+    <string name="btn_install_smarttube">Install SmartTube (YouTube 4K)</string>
+    <string name="desc_install_smarttube">Direct remote-friendly 4K YouTube client with SponsorBlock and zero Google Play dependencies.</string>
+    
+    <string name="title_app_hub">Curated TV App Store</string>
+    <string name="desc_app_hub">Tested, lightweight streaming and media apps optimized for 1GB/2GB TV boxes.</string>
+    
+    <string name="title_hw_info">Device Hardware &amp; Specs</string>
+    <string name="btn_reboot">Soft Reboot TV Box</string>
+</resources>

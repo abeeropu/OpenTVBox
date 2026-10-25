@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tv_bg_dark"
+    android:paddingLeft="40dp"
+    android:paddingTop="28dp"
+    android:paddingRight="40dp"
+    android:paddingBottom="28dp"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- HEADER BAR -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="24dp">
+
+            <ImageView
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:src="@drawable/ic_opentvbox"
+                android:contentDescription="@string/app_name" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_name"
+                    android:textColor="@color/tv_text_primary"
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TX3 Mini &amp; Legacy Android TV Compatibility &amp; App Hub"
+                    android:textColor="@color/tv_accent_cyan"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <!-- DEVICE SPECS BADGE -->
+            <LinearLayout
+                android:id="@+id/badge_device"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bg_tv_card"
+                android:paddingStart="16dp"
+                android:paddingTop="8dp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="8dp"
+                android:gravity="end">
+
+                <TextView
+                    android:id="@+id/tv_device_soc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SoC: Detecting..."
+                    android:textColor="@color/tv_accent_emerald"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_device_os"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OS: Detecting..."
+                    android:textColor="@color/tv_text_secondary"
+                    android:textSize="11sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- PRIMARY ACTIONS (D-PAD FOCUSABLE CARDS) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:baselineAligned="false"
+            android:layout_marginBottom="24dp">
+
+            <!-- CARD 1: PLAY STORE UNLOCK -->
+            <LinearLayout
+                android:id="@+id/card_unlock_playstore"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/card_selector"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:clickable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1-CLICK UNLOCK"
+                    android:textColor="@color/tv_accent_cyan"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Google Play Store Unlock"
+                    android:textColor="@color/tv_text_primary"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Fixes 'App not compatible' error by injecting Leanback XML and clearing Play Store cache."
+                    android:textColor="@color/tv_text_secondary"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/btn_run_unlock"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/button_selector"
+                    android:text="Run Compatibility Unlock"
+                    android:textAllCaps="false"
+                    android:textColor="@color/tv_text_primary"
+                    android:textSize="13sp"
+                    android:focusable="false" />
+            </LinearLayout>
+
+            <!-- CARD 2: SMARTTUBE DIRECT INSTALL -->
+            <LinearLayout
+                android:id="@+id/card_install_smarttube"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="6dp"
+                android:background="@drawable/card_selector"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:clickable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RECOMMENDED YOUTUBE FIX"
+                    android:textColor="@color/tv_accent_emerald"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="SmartTube 4K (No Play Services)"
+                    android:textColor="@color/tv_text_primary"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Ad-free 4K YouTube player built for TV remotes. Runs seamlessly on legacy Android 7+ without Play Store."
+                    android:textColor="@color/tv_text_secondary"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/btn_run_smarttube"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/button_selector"
+                    android:text="Download &amp; Install YouTube"
+                    android:textAllCaps="false"
+                    android:textColor="@color/tv_text_primary"
+                    android:textSize="13sp"
+                    android:focusable="false" />
+            </LinearLayout>
+
+            <!-- CARD 3: SYSTEM UTILITIES -->
+            <LinearLayout
+                android:id="@+id/card_system_utils"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="12dp"
+                android:background="@drawable/card_selector"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:clickable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TV BOX TOOLS"
+                    android:textColor="@color/tv_accent_amber"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Reboot &amp; System Health"
+                    android:textColor="@color/tv_text_primary"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_root_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Checking Root..."
+                    android:textColor="@color/tv_text_secondary"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/btn_run_reboot"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/button_selector"
+                    android:text="Soft Reboot Device"
+                    android:textAllCaps="false"
+                    android:textColor="@color/tv_text_primary"
+                    android:textSize="13sp"
+                    android:focusable="false" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- PROGRESS BAR -->
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:layout_marginBottom="16dp"
+            android:visibility="gone"
+            android:progress="0"
+            android:progressBackgroundTint="@color/tv_button_normal"
+            android:progressTint="@color/tv_accent_cyan" />
+
+        <!-- CURATED APP HUB SECTION -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Curated TV Apps (Direct Install)"
+            android:textColor="@color/tv_text_primary"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp" />
+
+        <LinearLayout
+            android:id="@+id/container_app_hub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="24dp">
+            <!-- App cards populated dynamically via Kotlin -->
+        </LinearLayout>
+
+        <!-- LIVE DIAGNOSTIC & CONSOLE OUTPUT -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Live Operation Log"
+            android:textColor="@color/tv_text_muted"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@drawable/bg_tv_card"
+            android:padding="12dp"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:id="@+id/scroll_console"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_console_log"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:text="[OpenTVBox Ready] Press 'Run Compatibility Unlock' or 'Install SmartTube' using your TV remote."
+                    android:textColor="@color/tv_accent_cyan"
+                    android:textSize="12sp" />
+            </ScrollView>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

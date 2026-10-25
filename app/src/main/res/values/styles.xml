@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.OpenTVBox" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="android:windowBackground">@color/tv_bg_dark</item>
+        <item name="android:textColorPrimary">@color/tv_text_primary</item>
+        <item name="android:textColorSecondary">@color/tv_text_secondary</item>
+        <item name="colorPrimary">@color/tv_accent_cyan</item>
+        <item name="colorSecondary">@color/tv_accent_emerald</item>
+    </style>
+</resources>

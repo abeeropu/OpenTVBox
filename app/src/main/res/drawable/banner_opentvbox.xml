@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="320dp"
+    android:height="180dp"
+    android:viewportWidth="320"
+    android:viewportHeight="180">
+    <!-- Gradient background -->
+    <path
+        android:fillColor="#0F141C"
+        android:pathData="M0,0 L320,0 L320,180 L0,180 Z" />
+    <path
+        android:fillColor="#1A222E"
+        android:pathData="M10,10 L310,10 L310,170 L10,170 Z" />
+
+    <!-- Accent Neon Edge -->
+    <path
+        android:fillColor="#00E5FF"
+        android:pathData="M10,10 L310,10 L310,14 L10,14 Z" />
+
+    <!-- TV Box Icon Left -->
+    <path
+        android:fillColor="#00E5FF"
+        android:pathData="M40,55 L100,55 C103.3,55 106,57.7 106,61 L106,105 C106,108.3 103.3,111 100,111 L40,111 C36.7,111 34,108.3 34,105 L34,61 C34,57.7 36.7,55 40,55 Z" />
+    <path
+        android:fillColor="#0F141C"
+        android:pathData="M38,59 L102,59 L102,101 L38,101 Z" />
+    <path
+        android:fillColor="#00E676"
+        android:pathData="M60,68 L82,80 L60,92 Z" />
+    <path
+        android:fillColor="#00E5FF"
+        android:pathData="M62,111 L78,111 L84,121 L56,121 Z" />
+
+    <!-- Modern Branding Elements -->
+    <path
+        android:fillColor="#00E676"
+        android:pathData="M125,75 L280,75 L280,79 L125,79 Z" />
+    <path
+        android:fillColor="#FFD600"
+        android:pathData="M125,95 L240,95 L240,97 L125,97 Z" />
+</vector>
